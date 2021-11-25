@@ -16,8 +16,8 @@ const countOnly = function(allItems, itemsToCount) {
     // inside the loop, 
     if (itemsToCount[inst] > 0) { // if itemsToCount@inst is "truthy" or in the array
       
-      if(results[inst]) { // 
-        results[inst] += 1; // add 1 count to results @ inst of allItems
+      if(results[inst]) { // // if a given item is in the results list
+        results[inst] += 1; // if its already in the list, increase count
       } else {
         results[inst] = 1; // else only count as 1
       }
@@ -43,5 +43,5 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 
 assertEqual(result1["Jason"], 1); // assertEqual function can only compare primitive values
 assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
+assertEqual(result1["Fang"], 3);
 assertEqual(result1["Agouhanna"], undefined);
