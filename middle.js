@@ -1,19 +1,3 @@
-const eqArrays = (array1, array2) => {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;                                 
-    }                
-  } return true;
-};      
-
-const assertArrayEqual = (array1,array2) => {
-  console.log(eqArrays(array1, array2) === true ? '✅ TRUE' : '🛑 FALSE');
-};
-
-
 // middle function which should return an array with only the middle elements
 // length of array could vary 
 const middle = (array) => {
@@ -34,13 +18,5 @@ const middle = (array) => {
 // return the new Array here 
 };
 
-let words = [];
- words = ["hello"];
-console.log(middle(words));
- words = ["hello", "world"];
-console.log(middle(words));
- words = ["hello", "world", "lighthouse", "jonah"];
-console.log(middle(words));
- words = ["hello", "world", "lighthouse", "jonah", "amy"];
-console.log(middle(words));
-middle(words);
+module.exports = middle;
+
