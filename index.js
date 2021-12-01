@@ -7,9 +7,9 @@ const countOnly = require('./countOnly');
 
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle, 
-  assertEqual: assertEqual,
-  countOnly: countOnly
+  head,
+  tail,
+  middle, 
+  assertEqual,
+  countOnly
 };
